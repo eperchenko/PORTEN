@@ -624,3 +624,23 @@ body {
     color: #D0D0D0;
     margin-left: 405px;
 }
+
+/* BTN */
+
+.second_col_btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 10px 10px;
+    background-size: 200%;
+    transition: .5s;
+}
+
+.second_col_btn:hover {
+    background-position: right;
+}
