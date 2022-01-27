@@ -5,6 +5,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #000;
     color: white;
 }
@@ -12,13 +15,13 @@ body {
 /* CONTAINER */
 
 .container {
-    width: 1920px;
+    width: 1440px;
 }
 
 /* HEADER */
 .header {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1440px;
     display: flex;
     height: 44px;
     align-items: center;
@@ -95,7 +98,7 @@ body {
 }
 
 .menu_logo {
-    margin: 15px 469px 16px 405px;
+    margin: 15px 550px 16px 100px;
 }
 
 .menu_links {
@@ -215,9 +218,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
-    max-width: 1920px;
+    max-width: 1440px;
     height: 810px;
     background-image: url(../img/FON.jpg);
 }
@@ -234,7 +237,8 @@ body {
 }
 
 .porten {
-    width: 185px;
+    width: 100%;
+    min-width: 1440px;
     height: 86px;
 }
 
@@ -381,7 +385,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     width: 471px;
-    height: 173px;
+
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -394,7 +398,7 @@ body {
 
 .arrivals_inner {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -541,70 +545,107 @@ body {
 .categories_items {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.link_watch {
-    width: 1500px;
-    height: 50px;
+.btn_watch {
     font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: #0F0F0F;
-
-    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace;
     color: #fff;
-    text-transform: uppercase; 
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 5px 5px;
+    background-size: 200%;
+    transition: .3s;
+    border-radius: 3px;
+    margin: 20px 20px 20px 20px;
 }
 
-.link_braslet{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 1ß00;
-    line-height: 21px;
-    background-color: #0F0F0F;
-
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase; 
+.btn_watch:hover {
+    background-position: right;
 }
-.link_remni {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: #0F0F0F;
 
-    text-decoration: none;
+.btn_braslet{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: monospace;
     color: #fff;
-    text-transform: uppercase; 
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 5px 5px;
+    background-size: 200%;
+    transition: .3s;
+    border-radius: 3px;
+    margin: 50px 20px 20px 20px;
 }
-.link_jevel {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: #0F0F0F;
 
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase; 
+.btn_braslet:hover {
+    background-position: right;
 }
-.link_zaponki {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    background-color: #0F0F0F;
 
-    text-decoration: none;
+.btn_remni {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: monospace;
     color: #fff;
-    text-transform: uppercase;  
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 5px 5px;
+    background-size: 200%;
+    transition: .3s;
+    border-radius: 3px;
+    margin: 50px 20px 20px 20px; 
+}
+
+.btn_remni:hover {
+    background-position: right;
+}
+
+.btn_jevel {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 5px 5px;
+    background-size: 200%;
+    transition: .3s;
+    border-radius: 3px;
+    margin: 50px 20px 20px 20px;
+}
+
+.btn_jevel:hover {
+    background-position: right;
+}
+
+.btn_zaponki {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #000000,#434343,#000000);
+    text-decoration: none;
+    padding: 5px 5px;
+    background-size: 200%;
+    transition: .3s;
+    border-radius: 3px;
+    margin: 50px 20px 20px 20px;
+}
+
+.btn_zaponki:hover {
+    background-position: right;
 }
 
 
@@ -627,7 +668,7 @@ body {
 
 /* BTN */
 
-.second_col_btn {
+.btn {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -638,9 +679,11 @@ body {
     text-decoration: none;
     padding: 10px 10px;
     background-size: 200%;
-    transition: .5s;
+    transition: .3s;
+    border-radius: 3px;
+    margin-top: 50px;
 }
 
-.second_col_btn:hover {
+.btn:hover {
     background-position: right;
 }
